@@ -1,0 +1,92 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="master.css">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!–– new ––>
+  <script type="text/javascript"> 
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{},
+      data: [
+      {
+       type: "doughnut",
+       toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+       dataPoints: [
+       {  y: 4, label: "A" },
+       {  y: 1, label: "B" },
+       {  y: 3, label: "C" },
+       {  y: 2, label: "D" },
+       {  y: 5, label: "E" },
+       {  y: 1, label: "F" },
+       {  y: 8, label: "G" }
+       ]
+     }
+     ]
+   });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+<!–– new ––>
+</head>
+<body>
+	<ul class="NavBar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Timeline2.html">About me</a></li>
+		<li><a href="#">Projects</a></li>
+		<li><a href="#">Contact </a></li>
+	</ul>
+
+	<div class="MainBox">
+		<div class="InnerContainer">
+		| shihtung shu |
+		</div>
+	</div>
+
+	<div class="TrioContainer">
+		<div class="SmallBox">
+			<h3> Naval Architect </h3>
+			<p> - This is the master degree I've gained after my 18 months journey of EMship from Taiwan to Belgium, France and Germany. By the way, I am also a Mechanical Engineer.</p>
+		</div>
+		<div class="SmallBox">
+			<h3> Consultancy Specialist </h3>
+			<p> - This is what I do for a living in Hamburg city. My company is the oldest ship classification society (over 250 years). At work, I speak German, English and Mandarin Chinese.</p>
+		</div>
+		<div class="SmallBox">
+			<h3> Web Developer </h3>
+			<p> - This is what you see now, my secret little hobby and my knife to kill time. I like to create stuff and handcrafted this portfolio with Sublime. Minimalism is the best.</p>
+		</div>
+	</div>
+
+	<div class="Outer">
+		<div class="BoxBig">
+			<!–– new ––>
+			<div id="chartContainer">
+			</div>
+			<!–– new ––>  
+		</div>
+		<div class="Inner">
+			<div class="BoxSmall">	
+				Box Two
+			</div>		
+			<div class="BoxSmall">	
+				Box Three
+			</div>		
+		</div>		
+		<div class="Inner">
+			<div class="BoxSmall">	
+				Box Four
+			</div>		
+			<div class="BoxSmall">	
+				Box Five
+			</div>		
+		</div>		
+	</div>
+
+
+</body>
+</html>
